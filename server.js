@@ -5,7 +5,7 @@ var mongoose = require('mongoose');
 var app = express();
 mongoose.connect('mongodb://localhost/basic-mern-boilerplate');
 
-const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT || 3001;
 
 // Serve our static assets
 app.use(express.static(path.resolve(__dirname, 'client', 'build')));
